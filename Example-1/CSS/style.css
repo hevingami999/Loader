@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+
+}
+.bg{
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.round{
+	width: 200px;
+	height: 200px;
+	background-color:  ;
+	border-radius: 100%;
+ 
+	border-right: 8px solid;
+	box-shadow: 0 0 30px red;
+	border-color: red  ;
+	animation-name: loader;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	position: relative;
+}
+
+@keyframes loader{
+	0%{transform:  rotate(0deg);}
+	100%{transform:   rotate(360deg);}
+}
+.round:hover{
+	animation-play-state: paused;
+}
